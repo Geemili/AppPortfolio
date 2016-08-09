@@ -22,13 +22,16 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Get the layout so that we can stick the project buttons in it
         LinearLayout projectBox = (LinearLayout) findViewById(R.id.projectBox);
 
+        // Get the list of projects
         String[] projects = getResources().getStringArray(R.array.projects);
-
         for (final String project: projects) {
+            // Make a new button
             Button projectButton = new Button(this);
             projectButton.setText(project);
+            // Make a message pop up
             projectButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -36,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
                             .setAction("Action", null).show();
                 }
             });
+
+            // Add the button to the box
             projectBox.addView(projectButton);
         }
     }
