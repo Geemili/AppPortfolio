@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App Portfolio</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_text">My Nanodegree Portfolio!</string>
+    <string-array name="projects">
+        <item>Popular Movies</item>
+        <item>Stock Hawk</item>
+        <item>Build It Bigger</item>
+        <item>Make Your App Material</item>
+        <item>Go Ubiquitous</item>
+        <item>Capstone Project</item>
+    </string-array>
+</resources>
